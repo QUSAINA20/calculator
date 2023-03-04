@@ -25,8 +25,8 @@ class CalculatorRequest extends FormRequest
     {
         return [
             'num1' => 'required|numeric',
-            'num2' => 'required_if:operation,add,subtract,multiply,divide,log|nullable|numeric',
-            'operation' => 'required|in:add,subtract,multiply,divide,log,sin,cos,tan,exp,pow'
+            'num2' => 'required_if:operation,+,-,*,/,log|nullable|numeric',
+            'operation' => 'required|in:+,-,*,/,log,sin,cos,tan,exp,pow'
         ];
     }
 }
