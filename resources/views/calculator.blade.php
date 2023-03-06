@@ -3,12 +3,12 @@
 
     <div>
         <label for="num1">Number 1:</label>
-        <input type="number" name="num1" id="num1" value="{{ old('num1') }}" required>
+        <input type="input" name="num1" id="num1" value="{{ old('num1') }}" required>
     </div>
 
     <div>
         <label for="num2">{{ request('operation') == 'log' ? 'Base' : 'Number 2' }}</label>
-        <input type="number" name="num2" id="num2" value="{{ old('num2') }}">
+        <input type="input" name="num2" id="num2" value="{{ old('num2') }}">
     </div>
 
     <div>

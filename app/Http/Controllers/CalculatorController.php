@@ -45,7 +45,7 @@ class CalculatorController extends Controller
         return view('calculator', compact('result'));
     }
 
-    private function performCalculation(float $num1, float $num2, string $operation): ?float
+    private function performCalculation(float $num1,  $num2, string $operation): ?float
     {
         $calculator = $this->calculator;
         $operations = [
